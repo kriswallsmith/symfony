@@ -198,7 +198,7 @@ class FrameworkExtension extends Extension
     {
         if (!empty($config['enabled'])) {
             $loader->load('proxy.xml');
-            $container->setParameter('http_content_renderer.proxy_path', $config['path']);
+            $container->setParameter('sub_request_renderer.proxy_path', $config['path']);
         }
     }
 
